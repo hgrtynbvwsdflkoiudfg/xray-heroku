@@ -1,34 +1,34 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: secsatn
+  name: rctiony
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: secsatn
+      app: rctiony
   template:
     metadata:
       labels:
-        app: secsatn
+        app: rctiony
     spec:
       containers:
-      - image: okteto.dev/secsatn:latest
-        name: secsatn
+      - image: okteto.dev/rctiony:latest
+        name: rctiony
         ports:
         - containerPort: 8080
         env:
         - name: PORT
           value: "8080"
         - name: ProxySite
-          value: "freemp3cloud.com"
+          value: "mp3-juice.com"
         - name: Vless_UUID
-          value: "217a238d-ed38-487a-8832-f61adf021584"
+          value: "51f8e92a-479e-4d5a-a2ea-1ba334273135"
         - name: Vless_Path
-          value: "/tnbkj4d"
+          value: "/Rdf34uh"
         - name: Vmess_UUID
-          value: "217a238d-ed38-487a-8832-f61adf021584"
+          value: "51f8e92a-479e-4d5a-a2ea-1ba334273135"
         - name: Vmess_Path
-          value: "/GyhgHJ"
+          value: "/scertgf"
         - name: Share_Path
-          value: "/Share241"
+          value: "/Share305"
