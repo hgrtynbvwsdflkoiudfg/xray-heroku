@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: dcertgnb
+  name: hostiony
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "dcertgnb"
+  - name: "hostiony"
     port: 8080
   selector:
-    app: dcertgnb
+    app: hostiony
