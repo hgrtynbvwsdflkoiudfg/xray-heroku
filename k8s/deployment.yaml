@@ -1,34 +1,34 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: hostiony
+  name: secsatn
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: hostiony
+      app: secsatn
   template:
     metadata:
       labels:
-        app: hostiony
+        app: secsatn
     spec:
       containers:
-      - image: okteto.dev/hostiony:latest
-        name: hostiony
+      - image: okteto.dev/secsatn:latest
+        name: secsatn
         ports:
         - containerPort: 8080
         env:
         - name: PORT
           value: "8080"
         - name: ProxySite
-          value: "www.freemusicarchive.org"
+          value: "freemp3cloud.com"
         - name: Vless_UUID
-          value: "a3888af6-3795-41b4-9b42-4a2ec27bc7a7"
+          value: "217a238d-ed38-487a-8832-f61adf021584"
         - name: Vless_Path
-          value: "/CIe6rtfy"
+          value: "/tnbkj4d"
         - name: Vmess_UUID
-          value: "a3888af6-3795-41b4-9b42-4a2ec27bc7a7"
+          value: "217a238d-ed38-487a-8832-f61adf021584"
         - name: Vmess_Path
-          value: "/xbr5egt"
+          value: "/GyhgHJ"
         - name: Share_Path
-          value: "/Share023"
+          value: "/Share241"
