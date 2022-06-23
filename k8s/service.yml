@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: hostiony
+  name: secsatn
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "hostiony"
+  - name: "secsatn"
     port: 8080
   selector:
-    app: hostiony
+    app: secsatn
