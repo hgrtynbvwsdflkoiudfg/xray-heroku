@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: secsatn
+  name: rctiony
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "secsatn"
+  - name: "rctiony"
     port: 8080
   selector:
-    app: secsatn
+    app: rctiony
