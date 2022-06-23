@@ -1,34 +1,34 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: dcertgnb
+  name: hostiony
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: dcertgnb
+      app: hostiony
   template:
     metadata:
       labels:
-        app: dcertgnb
+        app: hostiony
     spec:
       containers:
-      - image: okteto.dev/dcertgnb:latest
-        name: dcertgnb
+      - image: okteto.dev/hostiony:latest
+        name: hostiony
         ports:
         - containerPort: 8080
         env:
         - name: PORT
           value: "8080"
         - name: ProxySite
-          value: "www.jamendo.com"
+          value: "www.freemusicarchive.org"
         - name: Vless_UUID
-          value: "9a259dbb-76e7-4666-913c-ea4ea3d1f65f"
+          value: "a3888af6-3795-41b4-9b42-4a2ec27bc7a7"
         - name: Vless_Path
-          value: "/Tadf3WE"
+          value: "/CIe6rtfy"
         - name: Vmess_UUID
-          value: "9a259dbb-76e7-4666-913c-ea4ea3d1f65f"
+          value: "a3888af6-3795-41b4-9b42-4a2ec27bc7a7"
         - name: Vmess_Path
-          value: "/gwertf"
+          value: "/xbr5egt"
         - name: Share_Path
-          value: "/Share476"
+          value: "/Share023"
