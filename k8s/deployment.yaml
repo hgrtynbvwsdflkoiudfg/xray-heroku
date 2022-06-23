@@ -1,34 +1,34 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: rctiony
+  name: heritury
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: rctiony
+      app: heritury
   template:
     metadata:
       labels:
-        app: rctiony
+        app: heritury
     spec:
       containers:
-      - image: okteto.dev/rctiony:latest
-        name: rctiony
+      - image: okteto.dev/heritury:latest
+        name: heritury
         ports:
         - containerPort: 8080
         env:
         - name: PORT
           value: "8080"
         - name: ProxySite
-          value: "mp3-juice.com"
+          value: "okmusi.com"
         - name: Vless_UUID
-          value: "51f8e92a-479e-4d5a-a2ea-1ba334273135"
+          value: "ce65ab60-f8ea-4335-9220-0d352ed8af2f"
         - name: Vless_Path
-          value: "/Rdf34uh"
+          value: "/jweYHDtu"
         - name: Vmess_UUID
-          value: "51f8e92a-479e-4d5a-a2ea-1ba334273135"
+          value: "ce65ab60-f8ea-4335-9220-0d352ed8af2f"
         - name: Vmess_Path
-          value: "/scertgf"
+          value: "/RC0EFQWD"
         - name: Share_Path
-          value: "/Share305"
+          value: "/Share041"
